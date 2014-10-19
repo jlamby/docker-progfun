@@ -4,8 +4,6 @@ function containerExists {
 	containerExists=0
 	res=$(docker ps -a | grep $1)
 
-	#echo "Result " $res "\n"
-
 	if [ -n "$res" ]; then
 		containerExists=1
 	fi
